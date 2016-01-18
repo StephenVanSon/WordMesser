@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Randomizer"
+        android:id="@+id/textView2"
+        android:layout_marginTop="42dp"
+        android:textColor="#ff3355ff"
+        android:layout_below="@+id/switchToMesserButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Randomize!"
+        android:id="@+id/rdm_button"
+        android:onClick="rdmButtonPress"
+        android:layout_above="@+id/copyButton2"
+        android:layout_alignLeft="@+id/copyButton2"
+        android:layout_alignStart="@+id/copyButton2"
+        android:layout_alignRight="@+id/switchToMesserButton"
+        android:layout_alignEnd="@+id/switchToMesserButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:hint="Type some text here"
+        android:editable="true"
+        android:layout_below="@+id/textView2"
+        android:layout_above="@+id/rdm_button"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:enabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to messer"
+        android:id="@+id/switchToMesserButton"
+        android:onClick="switchToMesser"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        android:id="@+id/copyButton2"
+        android:onClick="copyRdm"
+        android:layout_marginBottom="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/switchToMesserButton"
+        android:layout_alignStart="@+id/switchToMesserButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasta"
+        android:id="@+id/pasteButton1"
+        android:onClick="pasteRdm"
+        android:layout_below="@+id/rdm_button"
+        android:layout_alignRight="@+id/rdm_button"
+        android:layout_alignEnd="@+id/rdm_button" />
+</RelativeLayout>
